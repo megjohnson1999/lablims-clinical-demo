@@ -68,9 +68,10 @@ const Dashboard = () => {
     const fetchDashboardData = async () => {
       // Don't fetch data if not authenticated or still loading
       if (!currentUser) {
+        setLoading(false);
         return;
       }
-      
+
       try {
         // Get basic statistics (available to all roles)
         const basicRequests = [

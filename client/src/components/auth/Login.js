@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Box,
   Container,
@@ -7,7 +7,8 @@ import {
   Button,
   Paper,
   Link,
-  Alert
+  Alert,
+  CircularProgress
 } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
@@ -19,7 +20,21 @@ const Login = () => {
   });
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  const [autoLoggingIn, setAutoLoggingIn] = useState(true);
   const { login } = useAuth();
+
+  // Auto-login for demo
+  useEffect(() => {
+    const autoLogin = async () => {
+      try {
+        await login('admin', '*r^D@qfj97mvpn@b');
+      } catch (err) {
+        console.error('Auto-login failed:', err);
+        setAutoLoggingIn(false);
+      }
+    };
+    autoLogin();
+  }, [login]);
 
   const { username, password } = formData;
 
@@ -43,6 +58,24 @@ const Login = () => {
       setLoading(false);
     }
   };
+
+  if (autoLoggingIn) {
+    return (
+      <Box
+        display="flex"
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="center"
+        minHeight="100vh"
+        gap={2}
+      >
+        <CircularProgress size={60} />
+        <Typography variant="h6" color="text.secondary">
+          Loading Demo...
+        </Typography>
+      </Box>
+    );
+  }
 
   return (
     <Box className="auth-container">
