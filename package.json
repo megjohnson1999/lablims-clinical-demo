@@ -1,7 +1,7 @@
 {
-  "name": "pathogen-discovery-database",
+  "name": "lablims-clinical",
   "version": "1.0.0",
-  "description": "Web-based Laboratory Information Management System for specimen tracking",
+  "description": "LabLIMS Clinical Edition - Laboratory management system for clinical research labs",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

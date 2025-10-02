@@ -132,7 +132,7 @@ const Layout = () => {
     <div>
       <Toolbar>
         <Typography variant="h6" noWrap component="div">
-          Pathogen DB
+          LabLIMS
         </Typography>
       </Toolbar>
       <Divider />
@@ -184,7 +184,7 @@ const Layout = () => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 }}>
-            Pathogen Discovery Database
+            LabLIMS Clinical
           </Typography>
           
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
