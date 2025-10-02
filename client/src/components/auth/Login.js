@@ -49,7 +49,7 @@ const Login = () => {
       <Container maxWidth="sm">
         <Paper elevation={3} className="auth-form">
           <Typography variant="h4" component="h1" className="auth-title" gutterBottom>
-            Pathogen Discovery Database
+            LabLIMS Clinical Edition
           </Typography>
           <Typography variant="h5" component="h2" className="auth-title" gutterBottom>
             Login
