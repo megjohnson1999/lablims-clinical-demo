@@ -1,0 +1,38 @@
+import React from 'react';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+
+const InstitutionChart = ({ data }) => {
+  if (!data || data.length === 0) {
+    return <div style={{ textAlign: 'center', padding: '40px' }}>No data available</div>;
+  }
+
+  const chartHeight = data.length * 45;
+
+  return (
+    <div style={{ width: '100%', height: '320px', overflowY: 'auto', overflowX: 'hidden' }}>
+      <div style={{ width: '100%', height: `${chartHeight}px`, minHeight: '320px' }}>
+        <ResponsiveContainer width="100%" height="100%">
+          <BarChart
+            data={data}
+            layout="vertical"
+            margin={{ top: 5, right: 30, left: 150, bottom: 5 }}
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis type="number" />
+            <YAxis
+              dataKey="name"
+              type="category"
+              width={140}
+              interval={0}
+              style={{ fontSize: '12px' }}
+            />
+            <Tooltip />
+            <Bar dataKey="value" fill="#ed6c02" barSize={20} />
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
+    </div>
+  );
+};
+
+export default InstitutionChart;

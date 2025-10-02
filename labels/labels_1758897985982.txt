@@ -1,0 +1,160 @@
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "415"
+EXTID = "SPEC_415"
+SPECIMENTYPE = "serum"
+Date = "08/08/1996"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "416"
+EXTID = "SPEC_416"
+SPECIMENTYPE = "serum"
+Date = "12/19/1996"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "417"
+EXTID = "SPEC_417"
+SPECIMENTYPE = "serum"
+Date = "01/13/1997"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "418"
+EXTID = "SPEC_418"
+SPECIMENTYPE = "serum"
+Date = "03/12/1997"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "419"
+EXTID = "SPEC_419"
+SPECIMENTYPE = "serum"
+Date = "01/10/2000"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "420"
+EXTID = "SPEC_420"
+SPECIMENTYPE = "serum"
+Date = "06/05/2000"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "421"
+EXTID = "SPEC_421"
+SPECIMENTYPE = "serum"
+Date = "06/05/2000"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "422"
+EXTID = "SPEC_422"
+SPECIMENTYPE = "serum"
+Date = "06/11/2000"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "423"
+EXTID = "SPEC_423"
+SPECIMENTYPE = "serum"
+Date = "03/08/1998"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "424"
+EXTID = "SPEC_424"
+SPECIMENTYPE = "serum"
+Date = "03/09/1998"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "425"
+EXTID = "SPEC_425"
+SPECIMENTYPE = "serum"
+Date = "06/07/1998"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "426"
+EXTID = "SPEC_426"
+SPECIMENTYPE = "serum"
+Date = "09/07/1998"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "427"
+EXTID = "SPEC_427"
+SPECIMENTYPE = "serum"
+Date = "09/13/1998"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "428"
+EXTID = "SPEC_428"
+SPECIMENTYPE = "serum"
+Date = "10/15/1998"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "429"
+EXTID = "SPEC_429"
+SPECIMENTYPE = "serum"
+Date = "04/12/1999"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "430"
+EXTID = "SPEC_430"
+SPECIMENTYPE = "serum"
+Date = "04/26/1999"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "431"
+EXTID = "SPEC_431"
+SPECIMENTYPE = "serum"
+Date = "06/15/1999"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "432"
+EXTID = "SPEC_432"
+SPECIMENTYPE = "serum"
+Date = "07/25/1999"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "433"
+EXTID = "SPEC_433"
+SPECIMENTYPE = "serum"
+Date = "11/07/1999"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "434"
+EXTID = "SPEC_434"
+SPECIMENTYPE = "serum"
+Date = "11/28/1999"
+LabelQuantity = "1"
+END
+

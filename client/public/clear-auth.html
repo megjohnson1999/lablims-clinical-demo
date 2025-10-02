@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clear Authentication - Pathogen Discovery Database</title>
+</head>
+<body>
+    <h2>Clearing Authentication State...</h2>
+    <p>This will clear any stuck authentication data and redirect you to the login page.</p>
+    
+    <script>
+        // Clear all authentication data
+        localStorage.removeItem('token');
+        sessionStorage.clear();
+        
+        // Clear any cached data
+        if ('caches' in window) {
+            caches.keys().then(function(names) {
+                names.forEach(function(name) {
+                    caches.delete(name);
+                });
+            });
+        }
+        
+        // Show status and redirect
+        document.body.innerHTML += '<p style="color: green;">✅ Authentication state cleared!</p>';
+        document.body.innerHTML += '<p>Redirecting to main application in 3 seconds...</p>';
+        
+        setTimeout(function() {
+            window.location.href = '/';
+        }, 3000);
+    </script>
+</body>
+</html>

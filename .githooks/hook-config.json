@@ -1,0 +1,25 @@
+{
+  "columnConsistencyHook": {
+    "enabled": true,
+    "severity": {
+      "deprecatedFields": "error",
+      "missingColumns": "error", 
+      "inconsistentPrimaryKeys": "error",
+      "csvHeaderMismatch": "warning",
+      "unexpectedFieldAccess": "warning"
+    },
+    "excludeFiles": [
+      "node_modules/",
+      ".git/",
+      "build/",
+      "dist/",
+      "coverage/"
+    ],
+    "entities": [
+      "collaborators",
+      "projects", 
+      "specimens",
+      "patients"
+    ]
+  }
+}

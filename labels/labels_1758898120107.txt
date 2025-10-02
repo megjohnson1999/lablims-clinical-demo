@@ -1,0 +1,40 @@
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "12"
+EXTID = "SPEC_12"
+SPECIMENTYPE = "Serum"
+Date = "11/15/1999"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "24"
+EXTID = "SPEC_24"
+SPECIMENTYPE = "Serum"
+Date = "06/29/2001"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "2516"
+EXTID = "SPEC_2516"
+SPECIMENTYPE = "Plasma"
+Date = "01/18/2009"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "6196"
+EXTID = "SPEC_6196"
+SPECIMENTYPE = "Serum"
+Date = "08/09/2010"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "11691"
+EXTID = "SPEC_11691"
+SPECIMENTYPE = "Stool"
+Date = "01/01/1970"
+LabelQuantity = "1"
+END
+

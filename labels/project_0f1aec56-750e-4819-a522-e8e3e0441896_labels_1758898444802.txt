@@ -1,0 +1,56 @@
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "650"
+EXTID = "SPEC_650"
+SPECIMENTYPE = "Tissue"
+Date = "01/01/1970"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "651"
+EXTID = "SPEC_651"
+SPECIMENTYPE = "Tissue"
+Date = "01/01/1970"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "652"
+EXTID = "SPEC_652"
+SPECIMENTYPE = "Tissue"
+Date = "01/01/1970"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "653"
+EXTID = "SPEC_653"
+SPECIMENTYPE = "Tissue"
+Date = "01/01/1970"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "654"
+EXTID = "SPEC_654"
+SPECIMENTYPE = "Tissue"
+Date = "01/01/1970"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "655"
+EXTID = "SPEC_655"
+SPECIMENTYPE = "Tissue"
+Date = "01/01/1970"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "656"
+EXTID = "SPEC_656"
+SPECIMENTYPE = "Tissue"
+Date = "01/01/1970"
+LabelQuantity = "1"
+END
+

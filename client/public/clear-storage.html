@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clear Browser Storage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f5f5f5;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      width: 500px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #0077b6;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 10px;
+    }
+    button:hover {
+      background-color: #005f8d;
+    }
+    .status {
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 4px;
+    }
+    .success {
+      background-color: #d4edda;
+      color: #155724;
+    }
+    .info {
+      background-color: #d1ecf1;
+      color: #0c5460;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Clear Browser Storage</h1>
+    <p>This page will help clear any cached tokens or data that may be affecting the login process.</p>
+    
+    <button id="clearButton">Clear Storage & Cache</button>
+    <button id="testButton">Test Connection</button>
+    <button id="loginButton">Go to Login</button>
+    
+    <div id="status" class="status"></div>
+  </div>
+
+  <script>
+    document.getElementById('clearButton').addEventListener('click', () => {
+      // Clear localStorage
+      localStorage.clear();
+      
+      // Clear sessionStorage
+      sessionStorage.clear();
+      
+      // Clear cookies by setting them to expire
+      document.cookie.split(";").forEach(function(c) {
+        document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+      });
+      
+      const status = document.getElementById('status');
+      status.textContent = 'Storage cleared successfully! You should now be able to log in.';
+      status.className = 'status success';
+    });
+    
+    document.getElementById('testButton').addEventListener('click', async () => {
+      const status = document.getElementById('status');
+      status.textContent = 'Testing API connection...';
+      status.className = 'status info';
+      
+      try {
+        // Test backend
+        const backendResponse = await fetch('http://localhost:5001/api/auth/login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ 
+            username: 'admin', 
+            password: 'admin123' 
+          })
+        });
+        
+        if (backendResponse.ok) {
+          const data = await backendResponse.json();
+          status.textContent = `Backend connection successful! Authentication working. Token received.`;
+          status.className = 'status success';
+        } else {
+          status.textContent = `Backend error: ${backendResponse.status} - ${backendResponse.statusText}`;
+          status.className = 'status error';
+        }
+      } catch (error) {
+        status.textContent = `Connection error: ${error.message}`;
+        status.className = 'status error';
+      }
+    });
+    
+    document.getElementById('loginButton').addEventListener('click', () => {
+      window.location.href = '/login';
+    });
+  </script>
+</body>
+</html>

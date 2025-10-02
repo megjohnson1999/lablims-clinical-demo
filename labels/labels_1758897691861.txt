@@ -1,0 +1,32 @@
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "1"
+EXTID = "SPEC_1"
+SPECIMENTYPE = "Serum"
+Date = "11/01/1999"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "2"
+EXTID = "SPEC_2"
+SPECIMENTYPE = "Serum"
+Date = "11/04/1999"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "3"
+EXTID = "SPEC_3"
+SPECIMENTYPE = "Serum"
+Date = "11/13/1999"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "4"
+EXTID = "SPEC_4"
+SPECIMENTYPE = "Serum"
+Date = "11/27/1999"
+LabelQuantity = "1"
+END
+

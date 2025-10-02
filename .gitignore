@@ -1,0 +1,88 @@
+# Dependencies
+/node_modules
+/client/node_modules
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Production
+/client/build
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.log
+*.tmp
+*.temp
+
+# ==============================================
+# DATABASE & DATA PROTECTION - CRITICAL
+# ==============================================
+# Database dumps and backups (may contain real research data)
+*.sql
+!db/schema.sql
+!db/seed_demo_data.sql
+!db/migrations/*.sql
+*.db
+*.sqlite
+*.dump
+*.sql.gz
+*.bak
+backup_*
+*research_data*
+*real_data*
+
+# Data exports that might contain sensitive information
+*.csv
+*.xlsx
+*.xls
+exports/
+test_export.*
+
+# Test files and logs
+test-*.js
+debug-*.js
+fix-*.js
+frontend_logs.txt
+server_logs.txt
+*_logs.txt
+
+# Demo/seed data files (should not be committed)
+**/seed_*_demo_data.sql
+**/demo_data.sql
+
+# Test data directories
+test-data-metadata-tabs/
+test-data*/
+synthetic_*
+*_subset.csv
+
+# Local development documentation (auto-updated)
+CLAUDE.md

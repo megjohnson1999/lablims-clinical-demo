@@ -1,0 +1,32 @@
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "21"
+EXTID = "AFI-21"
+SPECIMENTYPE = "Serum"
+Date = "06/20/2001"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "31"
+EXTID = "AFI-31"
+SPECIMENTYPE = "Serum"
+Date = "07/30/2001"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "51"
+EXTID = "AFI-51"
+SPECIMENTYPE = "Serum"
+Date = "02/02/2002"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "6161"
+EXTID = "AFI_Bul-Sofia-012-I"
+SPECIMENTYPE = "Serum"
+Date = "12/30/1969"
+LabelQuantity = "1"
+END
+

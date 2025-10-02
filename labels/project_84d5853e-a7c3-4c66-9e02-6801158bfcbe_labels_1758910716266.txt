@@ -1,0 +1,152 @@
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "804"
+EXTID = "T256-S-II"
+SPECIMENTYPE = "Tissue"
+Date = "01/01/1970"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "805"
+EXTID = "T189-S-II"
+SPECIMENTYPE = "Tissue"
+Date = "01/01/1970"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "806"
+EXTID = "T191-S-II"
+SPECIMENTYPE = "Tissue"
+Date = "01/01/1970"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "807"
+EXTID = "T109-S-II"
+SPECIMENTYPE = "Tissue"
+Date = "01/01/1970"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "808"
+EXTID = "T100-S-II"
+SPECIMENTYPE = "Tissue"
+Date = "01/01/1970"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "809"
+EXTID = "T97-S-II"
+SPECIMENTYPE = "Tissue"
+Date = "01/01/1970"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "810"
+EXTID = "T95-S-II"
+SPECIMENTYPE = "Tissue"
+Date = "01/01/1970"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "811"
+EXTID = "T94-S-II"
+SPECIMENTYPE = "Tissue"
+Date = "01/01/1970"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "812"
+EXTID = "T93-S-II"
+SPECIMENTYPE = "Tissue"
+Date = "01/01/1970"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "813"
+EXTID = "T91-S-II"
+SPECIMENTYPE = "Tissue"
+Date = "01/01/1970"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "814"
+EXTID = "T87-S-II"
+SPECIMENTYPE = "Tissue"
+Date = "01/01/1970"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "815"
+EXTID = "T78-S-II"
+SPECIMENTYPE = "Tissue"
+Date = "01/01/1970"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "816"
+EXTID = "T37-S-II"
+SPECIMENTYPE = "Tissue"
+Date = "01/01/1970"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "817"
+EXTID = "T35-S-II"
+SPECIMENTYPE = "Tissue"
+Date = "01/01/1970"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "818"
+EXTID = "T9-S-II"
+SPECIMENTYPE = "Tissue"
+Date = "01/01/1970"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "819"
+EXTID = "T4-S-II"
+SPECIMENTYPE = "Tissue"
+Date = "01/01/1970"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "820"
+EXTID = "14891"
+SPECIMENTYPE = "Tissue"
+Date = "01/01/1970"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "821"
+EXTID = "14885"
+SPECIMENTYPE = "Tissue"
+Date = "01/01/1970"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "822"
+EXTID = "14882"
+SPECIMENTYPE = "Tissue"
+Date = "01/01/1970"
+LabelQuantity = "1"
+END
+

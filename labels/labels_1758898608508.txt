@@ -1,0 +1,24 @@
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "16916"
+EXTID = "SPEC_16916"
+SPECIMENTYPE = "Stool"
+Date = "01/01/1970"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "2510"
+EXTID = "SPEC_2510"
+SPECIMENTYPE = "Plasma"
+Date = "01/09/2009"
+LabelQuantity = "1"
+END
+
+LABELNAME = "PathDiscCapLid.Lab"
+LABEL = "493"
+EXTID = "SPEC_493"
+SPECIMENTYPE = "Stool"
+Date = "08/15/2006"
+LabelQuantity = "1"
+END
+
