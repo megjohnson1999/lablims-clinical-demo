@@ -75,14 +75,15 @@ const WelcomeModal = () => {
       fullWidth
       PaperProps={{
         sx: {
-          background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-          color: 'white'
+          background: '#0f172a',
+          color: 'white',
+          borderRadius: '8px'
         }
       }}
     >
       <DialogTitle>
         <Typography variant="h4" component="div" sx={{ fontWeight: 'bold', mb: 1 }}>
-          Welcome to LabLIMS Clinical Demo! 🎯
+          Welcome to LabLIMS Clinical Demo
         </Typography>
         <Chip
           label="Logged in as Lab Manager"
@@ -117,8 +118,8 @@ const WelcomeModal = () => {
         </Box>
 
         <Box sx={{ bgcolor: 'rgba(255,255,255,0.15)', borderRadius: 2, p: 2 }}>
-          <Typography variant="subtitle1" sx={{ fontWeight: 'bold', mb: 1, display: 'flex', alignItems: 'center', gap: 1 }}>
-            <CheckIcon /> Quick Tips:
+          <Typography variant="subtitle1" sx={{ fontWeight: 'bold', mb: 1 }}>
+            Quick Tips:
           </Typography>
           <Typography variant="body2" component="ul" sx={{ pl: 2, mt: 1 }}>
             <li>All data is pre-populated with realistic clinical scenarios</li>
