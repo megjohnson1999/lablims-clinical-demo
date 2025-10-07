@@ -209,7 +209,7 @@ app.post('/api/admin/deploy-schema', async (req, res) => {
     const fs = require('fs');
     const schemaSQL = fs.readFileSync('./db/schema.sql', 'utf8');
     await pool.query(schemaSQL);
-    
+
     res.json({
       success: true,
       message: 'Core database schema deployed successfully!'
@@ -219,6 +219,27 @@ app.post('/api/admin/deploy-schema', async (req, res) => {
     res.status(500).json({
       success: false,
       message: 'Schema deployment error',
+      error: error.message
+    });
+  }
+});
+
+// Admin endpoint to load demo data
+app.post('/api/admin/load-demo-data', async (req, res) => {
+  try {
+    const fs = require('fs');
+    const demoDataSQL = fs.readFileSync('./demo_data_expanded.sql', 'utf8');
+    await pool.query(demoDataSQL);
+
+    res.json({
+      success: true,
+      message: 'Demo data loaded successfully!'
+    });
+  } catch (error) {
+    logger.error('Demo data loading error:', error);
+    res.status(500).json({
+      success: false,
+      message: 'Demo data loading error',
       error: error.message
     });
   }
