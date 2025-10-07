@@ -41,8 +41,10 @@ import {
 } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
+import { useDemo } from '../../context/DemoContext';
 import useKeyboardShortcuts from '../../hooks/useKeyboardShortcuts';
 import { useKeyboardShortcutsHelp } from '../common/KeyboardShortcutsHelp';
+import DemoBanner from '../common/DemoBanner';
 
 const drawerWidth = 240;
 
@@ -276,12 +278,15 @@ const Layout = () => {
       
       <Box
         component="main"
-        sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
+        sx={{ flexGrow: 1, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
       >
         <Toolbar />
-        <Container maxWidth="xl">
-          <Outlet />
-        </Container>
+        <DemoBanner demoType="clinical" />
+        <Box sx={{ p: 3 }}>
+          <Container maxWidth="xl">
+            <Outlet />
+          </Container>
+        </Box>
       </Box>
       
       {/* Keyboard Shortcuts Help Dialog */}

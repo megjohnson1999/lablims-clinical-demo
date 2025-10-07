@@ -83,6 +83,11 @@ import Analytics from './components/Analytics/Analytics';
 // Context
 import { useAuth } from './context/AuthContext';
 import { LoadingProvider } from './context/LoadingContext';
+import { DemoProvider } from './context/DemoContext';
+
+// Demo Components
+import WelcomeModal from './components/common/WelcomeModal';
+import DemoContactModal from './components/common/DemoContactModal';
 
 const theme = createTheme({
   palette: {
@@ -169,9 +174,12 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <LoadingProvider>
-        <ToastContainer position="top-right" autoClose={5000} />
-        <Routes>
+      <DemoProvider>
+        <LoadingProvider>
+          <WelcomeModal />
+          <DemoContactModal />
+          <ToastContainer position="top-right" autoClose={5000} />
+          <Routes>
         <Route path="/login" element={!isAuthenticated ? <Login /> : <Navigate to="/" />} />
         <Route path="/register" element={!isAuthenticated ? <Register /> : <Navigate to="/" />} />
         
@@ -283,7 +291,8 @@ function App() {
             console.error('Password change failed:', error);
           }}
         />
-      </LoadingProvider>
+        </LoadingProvider>
+      </DemoProvider>
     </ThemeProvider>
   );
 }

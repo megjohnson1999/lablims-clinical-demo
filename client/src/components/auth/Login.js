@@ -20,20 +20,28 @@ const Login = () => {
   });
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
-  const [autoLoggingIn, setAutoLoggingIn] = useState(true);
+  const [autoLoggingIn, setAutoLoggingIn] = useState(false);
   const { login } = useAuth();
 
-  // Auto-login for demo
+  // Auto-login for demo mode
   useEffect(() => {
-    const autoLogin = async () => {
-      try {
-        await login('admin', '*r^D@qfj97mvpn@b');
-      } catch (err) {
-        console.error('Auto-login failed:', err);
-        setAutoLoggingIn(false);
-      }
-    };
-    autoLogin();
+    const demoMode = process.env.REACT_APP_DEMO_MODE === 'true';
+    const demoUsername = process.env.REACT_APP_DEMO_USERNAME || 'admin';
+    const demoPassword = process.env.REACT_APP_DEMO_PASSWORD || '*r^D@qfj97mvpn@b';
+
+    if (demoMode) {
+      setAutoLoggingIn(true);
+      const performAutoLogin = async () => {
+        try {
+          await login(demoUsername, demoPassword);
+        } catch (err) {
+          console.error('Auto-login failed:', err);
+          setAutoLoggingIn(false);
+          setError('Demo auto-login failed. Please try manually.');
+        }
+      };
+      performAutoLogin();
+    }
   }, [login]);
 
   const { username, password } = formData;
