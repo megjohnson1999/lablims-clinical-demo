@@ -245,6 +245,64 @@ app.post('/api/admin/load-demo-data', async (req, res) => {
   }
 });
 
+// Admin endpoint to create admin user
+app.post('/api/admin/create-admin', async (req, res) => {
+  try {
+    const bcrypt = require('bcryptjs');
+
+    // Check if admin already exists
+    const existingAdmin = await pool.query(
+      "SELECT id, username FROM users WHERE username = 'admin'"
+    );
+
+    if (existingAdmin.rows.length > 0) {
+      return res.json({
+        success: false,
+        message: 'Admin user already exists',
+        username: 'admin'
+      });
+    }
+
+    // Get password from environment (ADMIN_PASSWORD) or use default
+    const adminPassword = process.env.ADMIN_PASSWORD || 'demo123';
+
+    // Hash the password
+    const salt = await bcrypt.genSalt(10);
+    const hashedPassword = await bcrypt.hash(adminPassword, salt);
+
+    // Create admin user
+    await pool.query(`
+      INSERT INTO users (
+        username, email, password, first_name, last_name, role,
+        force_password_change, active
+      ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
+    `, [
+      'admin',
+      'admin@lab.local',
+      hashedPassword,
+      'Lab',
+      'Administrator',
+      'admin',
+      false,
+      true
+    ]);
+
+    res.json({
+      success: true,
+      message: 'Admin user created successfully!',
+      username: 'admin',
+      password: adminPassword
+    });
+  } catch (error) {
+    logger.error('Admin creation error:', error);
+    res.status(500).json({
+      success: false,
+      message: 'Admin creation error',
+      error: error.message
+    });
+  }
+});
+
 // Define routes
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/users', require('./routes/users'));
